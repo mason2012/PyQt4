@@ -3,6 +3,7 @@ import sys
 from PyQt4 import QtGui
 
 '''
+#面向过程式
 app = QtGui.QApplication(sys.argv) #
 widget = QtGui.QWidget()
 widget.resize(200,250)
@@ -11,7 +12,8 @@ widget.show()
 
 sys.exit(app.exec_())
 '''
-
+'''
+#面向对象式
 class Simple(QtGui.QWidget):
   def __init__(self,parent=None):
     super(Simple,self).__init__(parent)
@@ -25,3 +27,5 @@ app = QtGui.QApplication(sys.argv)
 sim = Simple()
 sim.show()
 sys.exit(app.exec_())
+'''
+
